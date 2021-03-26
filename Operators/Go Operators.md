@@ -25,7 +25,8 @@ Learned: Feb 25, 2021 1:15 PM
 
 - Arithmetic Operators
 
-![Go%20Operators%20a00f5f95e65e41bea03f354f5c9b95c0/Untitled.png](Go%20Operators%20a00f5f95e65e41bea03f354f5c9b95c0/Untitled.png)
+<img src="./images/Untitled.png" alt="Operators in Go"
+     width="100%" height="500px%" align="left" />
 
 ```go
 package main 
@@ -44,7 +45,8 @@ func main(){
 
 - Assignment Operators
 
-![Go%20Operators%20a00f5f95e65e41bea03f354f5c9b95c0/Untitled%201.png](Go%20Operators%20a00f5f95e65e41bea03f354f5c9b95c0/Untitled%201.png)
+<img src="./images/Untitled 1.png" alt="Operators in Go"
+     width="100%" height="500px%" align="left" />
 
 ```go
 package main
@@ -68,7 +70,8 @@ func main(){
 
 - Comparison (Relational) Operators
 
-![Go%20Operators%20a00f5f95e65e41bea03f354f5c9b95c0/Untitled%202.png](Go%20Operators%20a00f5f95e65e41bea03f354f5c9b95c0/Untitled%202.png)
+<img src="./images/Untitled 2.png" alt="Operators in Go"
+     width="100%" height="500px%" align="left" />
 
 ```go
 package main
@@ -88,7 +91,8 @@ func main(){
 
 - Logical Operators
 
-![Go%20Operators%20a00f5f95e65e41bea03f354f5c9b95c0/Untitled%203.png](Go%20Operators%20a00f5f95e65e41bea03f354f5c9b95c0/Untitled%203.png)
+<img src="./images/Untitled 3.png" alt="Operators in Go"
+     width="100%" height="500px%" align="left" />
 
 ```go
 package main 
@@ -111,7 +115,8 @@ func main(){
 
 - Bit wise Operators
 
-![Go%20Operators%20a00f5f95e65e41bea03f354f5c9b95c0/Untitled%204.png](Go%20Operators%20a00f5f95e65e41bea03f354f5c9b95c0/Untitled%204.png)
+<img src="./images/Untitled 4.png" alt="Operators in Go"
+     width="100%" height="500px%" align="left" />
 
 ```go
 package main
@@ -133,6 +138,7 @@ func main(){
 
 - Other Operators
 
-![Go%20Operators%20a00f5f95e65e41bea03f354f5c9b95c0/Untitled%205.png](Go%20Operators%20a00f5f95e65e41bea03f354f5c9b95c0/Untitled%205.png)
+<img src="./images/Untitled 5.png" alt="Operators in Go"
+     width="100%" height="500px%" align="left" />
 
 ---
