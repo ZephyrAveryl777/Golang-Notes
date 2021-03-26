@@ -1,6 +1,12 @@
 # GoLang Notes
-Clear concise and well paced, easy to understand, follow along the core concepts aiming at making Go a no-brainer for anyone looking to learn something new as it could make one feel a natural savant. 
-
+<p align="center">
+  This repository contains Clear concise and well paced, easy to understand, follow along the core concepts aiming at making Go a no-brainer for anyone looking to learn something new as it could make one feel a natural savant. 
+</p>
+<h1 align="center">
+  <br>
+   <img src="https://juststickers.in/wp-content/uploads/2019/01/gopher-ninja.png" alt= "Go Logo" />
+  <br>
+</h1>
 ### Table of Contents 
 ---
 |Sl.No|Topic |
