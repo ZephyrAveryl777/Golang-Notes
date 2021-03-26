@@ -52,8 +52,11 @@ Starting in Go 1.13, module mode will be the default for all development. Here i
     console, either sitting at the machine, or remotely via ssh: .bash_profile is
     executed to configure your shell before the initial command prompt. (Mostly used in Linux and Mac Os)
     **Example**
-    image - untitle.png
-    image - untitle1.png
+    <img src= "./images/Untitled.png" alt="Installation code"
+	title="Golang paths" width="100%" height="300px%" align="left" />
+    
+    <img src= "./images/Untitled 1.png" alt="Installation code"
+	title="installation steps" width="100%" height="500px%" align="left" />
 ---
 
 ### IDE's  ⇒ Integrated Development  Environment
@@ -129,7 +132,8 @@ You create a go module “workspace” using this command:
 - go mod init [example.com/hello](http://example.com/hello)
 - [example.com/hello](http://example.com/hello) is just a text, any text can be placed here
 
-image - untitle2.png
+<img src= "./images/Untitled 2.png" alt="Installation code"
+	title="Creating Modules" width="100%" height="500px%" align="left" />
 
 **Adding  a dependency** 
 
