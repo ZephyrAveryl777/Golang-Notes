@@ -55,7 +55,7 @@ Output
 
 - illustration of slice
 
-    ![Go%20Slices%20437ad614456649eea86a2373accf7392/Untitled.png](Go%20Slices%20437ad614456649eea86a2373accf7392/Untitled.png)
+<img src= "./images/Untitled.png" alt="Slices in Go"  width="100%" height="500px%" align="left" />
 
 ---
 
