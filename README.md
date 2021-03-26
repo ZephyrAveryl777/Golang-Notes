@@ -1,7 +1,8 @@
 # GoLang Notes
 <p align="center">
-  This repository contains clear concise and well paced, easy to understand, follow along the core concepts aiming at making Go a no-brainer for anyone looking to learn something new as it could make one feel a natural savant. 
+  This repository contains clear concise and well paced, easy to understand, follow along the core concepts aiming at making Go a no-brainer for anyone looking to learn something new as it could make one feel a natural savant.
 </p>
+<hr>
 <h1 align="center">
   <br>
    <img src="https://gophersource.com/img/mic-drop.png" align="center" height="475px" alt= "Go Logo" />
