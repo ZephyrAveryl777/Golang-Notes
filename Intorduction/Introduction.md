@@ -5,7 +5,7 @@
 - **Popularity of Go**
 
 <img src="https://merehead.com/blog/wp-content/uploads/19-4.png" alt="Kitten"
-	title="Go's Ranking" width="975px" height="470px" align="left" />
+	title="Go's Ranking" width="1001px" height="470px" align="left" />
 
 - **Credentials of Go**
     - Google
