@@ -8,14 +8,15 @@
 - Built in data types :
     - Numbers
         - int, unit ,byte,rune,uintptr
-     <img src="https://merehead.com/blog/wp-content/uploads/19-4.png" alt="Kitten"
-	title="Go's Ranking" width="100%" height="500px%" align="left" />
+     <img src="./images/Untitled.png" alt="Datatype"
+	 width="100%" height="500px%" align="left" />
 
-    ![Go%20DataTypes%208487f9e1fd8b48fda3391fc2c9135757/Untitled.png](Go%20DataTypes%208487f9e1fd8b48fda3391fc2c9135757/Untitled.png)
+     <img src="./images/Untitled 1.png" alt="Datatype"
+	 width="100%" height="350px%" align="left" />
+	
+     <img src="./images/Untitled 2.png" alt="Datatype"
+	 width="100%" height="350px%" align="left" />
 
-    ![Go%20DataTypes%208487f9e1fd8b48fda3391fc2c9135757/Untitled%201.png](Go%20DataTypes%208487f9e1fd8b48fda3391fc2c9135757/Untitled%201.png)
-
-    ![Go%20DataTypes%208487f9e1fd8b48fda3391fc2c9135757/Untitled%202.png](Go%20DataTypes%208487f9e1fd8b48fda3391fc2c9135757/Untitled%202.png)
 
     - Float :
         - used to store decimal points
