@@ -8,7 +8,7 @@ Learned: Feb 25, 2021 4:35 PM
 
 ![https://www.tutorialspoint.com/go/images/decision_making.jpg](https://www.tutorialspoint.com/go/images/decision_making.jpg)
 
-![Go%20Decision%20Making%20d14129fb952f471a81cbbe7cf2767bfb/Untitled.png](Go%20Decision%20Making%20d14129fb952f471a81cbbe7cf2767bfb/Untitled.png)
+<img src="./images/Untitled.png" alt="Decision Making in Go"  width="100%" height="500px%" align="left" />
 
 ---
 
@@ -87,7 +87,7 @@ if( boolean_expression 1) {
 - In Golang the break keyword is implicit
 - **Fall-through:  used to transfer control to the first statement of the case that is present immediately after the case which has been executed**
 
-![Go%20Decision%20Making%20d14129fb952f471a81cbbe7cf2767bfb/Untitled%201.png](Go%20Decision%20Making%20d14129fb952f471a81cbbe7cf2767bfb/Untitled%201.png)
+<img src="./images/Untitled 1.png" alt="Decision Making in Go"  width="100%" height="500px%" align="left" />
 
 ```go
 switch  var1 {  
