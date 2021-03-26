@@ -1,7 +1,5 @@
 # Go Operators
 
-Learned: Feb 25, 2021 1:15 PM
-
 ### Short declaration operator
 
 - terminology
