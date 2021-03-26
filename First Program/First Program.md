@@ -1,7 +1,5 @@
 # First Program
 
-Learned: Feb 25, 2021 8:59 AM
-
 ### Go Hello World Example
 
 Step 1 :-  Create  a file  <filename.go> use any text editor or IDE and specify .go file extension .
