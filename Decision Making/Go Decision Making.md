@@ -1,7 +1,5 @@
 # Go Decision Making
 
-Learned: Feb 25, 2021 4:35 PM
-
 ### Decision Making Statement
 
 - specify one or more conditions to be evaluated or tested by the program,
