@@ -9,7 +9,7 @@
     - Numbers
         - int, unit ,byte,rune,uintptr
      <img src="./images/Untitled.png" alt="Datatype"
-	 width="100%" height="500px%" align="left" />
+	 width="100%" height="400px%" align="left" />
 
      <img src="./images/Untitled 1.png" alt="Datatype"
 	 width="100%" height="350px%" align="left" />
