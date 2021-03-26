@@ -4,7 +4,7 @@
 </p>
 <h1 align="center">
   <br>
-   <img src="https://juststickers.in/wp-content/uploads/2019/01/gopher-ninja.png" alt= "Go Logo" />
+   <img src="https://gophersource.com/img/mic-drop.png" align="center" height="475px" alt= "Go Logo" />
   <br>
 </h1>
 
