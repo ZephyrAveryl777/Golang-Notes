@@ -3,7 +3,7 @@
 - also called as structure 
 - user defined type (composite in nature)
 - allows to group/combine items of possibly different types into a single  type. 
-- can represent real-worl entity which has some set of properties/fields 
+- can represent real-world entity which has some set of properties/fields 
 - compared as a classes in object-oriented programming.
 - termed as a lightweight class that doesnot support inheritance but supports composition
 ```go 
