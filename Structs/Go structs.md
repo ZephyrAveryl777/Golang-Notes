@@ -136,5 +136,33 @@ Ouptput
 First Name: A
 Age: 55
 */
+
+// pointer to struct 
+package main
+import "fmt"
+
+// defining a structure 
+type Employee struct {
+    firstName,lastName string
+    age, salary int 
+}
+
+func main() {
+  // passing the address of stuct variable 
+  // emp is a pointer to the Employee struct 
+  
+  emp := &Employee{"A","B",55,600}
+  
+  // (*emp).fistName is the syntax to access 
+  // the firstName field of the emp struct 
+  
+  fmt.Println("First Name: ",emp.firstName)
+  fmt.Println("Age;",emp.age)  
+}
+/*
+Ouptput
+First Name: A
+Age: 55
+*/
 ```
 ---
