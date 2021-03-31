@@ -133,7 +133,7 @@ func main() {
 }
 /*
 Ouptput
-First Name: Sam 
+First Name: A
 Age: 55
 */
 ```
