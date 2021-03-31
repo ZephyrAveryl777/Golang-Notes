@@ -166,3 +166,63 @@ Age: 55
 */
 ```
 ---
+### Struct Comparision 
+- comparision of two structs are allowed if they are of the same type and contain the same fields values with the help of == operator or DeeplyEqual() method. 
+- Both the operator and method return true if the structures are identically equal else return false. 
+```go 
+// using == operator 
+package main
+import "fmt"
+
+// Creating a structure 
+type Author struct {
+  name string
+  branch string 
+  language string 
+  Particles int 
+}
+// Main function 
+func main(){
+  // Creating variables
+  a1 := Author{
+    name: "A",
+    branch: "B",
+    language: "C",
+    Particles: 12,
+  }
+  a2 := Author{
+    name: "C",
+    branch: "D",
+    language: "E",
+    Particles: 13,
+  }
+  a3 := Author{
+    name: "F",
+    branch: "G",
+    language: "H",
+    Particles: 14,
+  }
+  // Checking if a1 is equal 
+  // to a2 or not 
+  // using == operator 
+  if a1 == a2 {
+    fmt.Println("Variable a1 is equal to variable a2")
+  } else {
+    fmt.Println("Variable a1 is not equal to varaible at a2")
+  }
+  
+  // Checking if a1 is equal
+  // to a2 or not 
+  // using == operator 
+  if a2 == a3 {
+    fmt.Println("Variable a2 is equal to variable a3")
+   } else {
+     fmt.Println("Variable a2 is not equal to variable a3")
+   }
+ }
+ /*
+ Output:
+ Variable a1 is equal to varaible a2
+ Varaible a2 is not equal to variables a3
+ */
+````
