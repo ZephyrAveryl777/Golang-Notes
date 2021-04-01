@@ -435,8 +435,9 @@ Output
 */
 ```
 ---
-### Anonymous Fields
+### Anonymous Fields 
 - fields which do not contain any name, just simply mention the type of the fields and Go will automatically use the type as the name of the field.
+- also called Embedded fields a form of Composition not inheritance.
 - Syntax: 
 ```go 
 type struct_name struct{
@@ -497,3 +498,79 @@ Package price :  8900.23
 */
 ``` 
 ---
+### Promoted Fields  
+-  are just like anonymous fields
+-  the type of the field is the name of the field.
+-  In "promotion”, whereby the fields or methods of embedded(anonymous) types become available on the outer/embedding(anonymous) type
+-  This gives the pseudo-impression of “inheritance”, best not to think this way. 
+-  Promoted fields act like ordinary fields of a struct except that they cannot be used as field names in composite literals of the struct.
+- Syntax:
+```go 
+type x struct{
+// Fields
+}
+
+type y struct{
+// Fields of y structure
+x
+}
+````
+- Example 
+```go 
+// concept of the promoted fields
+package main
+
+import "fmt"
+
+// Structure
+type details struct {
+
+	// Fields of the
+	// details structure
+	name string
+	age int
+	gender string
+}
+
+// Nested structure
+type student struct {
+	branch string
+	year int
+	details
+}
+
+func main() {
+
+	// Initializing the fields of
+	// the student structure
+	values := student{
+		branch: "CSE",
+		year: 2010,
+		details: details{
+		
+			name: "Sam",
+			age: 28,
+			gender: "Male",
+		},
+	}
+
+	// Promoted fields of the student structure
+	fmt.Println("Name: ", values.name)
+	fmt.Println("Age: ", values.age)
+	fmt.Println("Gender: ", values.gender)
+
+	// Normal fields of
+	// the student structure
+	fmt.Println("Year: ", values.year)
+	fmt.Println("Branch : ", values.branch)
+}
+/*
+Output
+Name:  Sam
+Age:  28
+Gender:  Male
+Year:  2010
+Branch :  CSE
+*/
+````
+
