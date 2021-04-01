@@ -573,4 +573,163 @@ Year:  2010
 Branch :  CSE
 */
 ````
+---
+### Promoted Methods
+- implemented by the child structure, and is accessible by the parent structure.
+**Important Point** 
+- If the child and the parent structure contain a method that has the same name but different type of receiver, then both the methods are available in the parent structure.
+- If child structure contains two methods with the same name and same receiver, then these methods are not promoted in the parent structure and if you try to do, then the compiler will give an error.
+```go 
+// Golang program to illustrate the
+// concept of the promoted methods
+package main
 
+import "fmt"
+
+// Structure
+type details struct {
+
+	// Fields of the
+	// details structure
+	name string
+	age	 int
+	gender string
+	psalary int
+}
+
+// Nested structure
+type employee struct {
+	post string
+	eid int
+	details
+}
+
+// Method
+func (d details) promotmethod(tsalary int) int {
+	return d.psalary * tsalary
+}
+
+func main() {
+
+	// Initializing the fields of
+	// the employee structure
+	values := employee{
+		post: "HR",
+		eid: 4567,
+		details: details{
+
+			name: "Sam",
+			age:	 28,
+			gender: "Male",
+			psalary: 890,
+		},
+	}
+
+	// Promoted fields of the
+	// employee structure
+	fmt.Println("Name: ", values.name)
+	fmt.Println("Age: ", values.age)
+	fmt.Println("Gender: ", values.gender)
+	fmt.Println("Per day salary: ", values.psalary)
+
+	// Promoted method of the
+	// employee structure
+	fmt.Println("Total Salary: ", values.promotmethod(30))
+
+	// Normal fields of
+	// the employee structure
+	fmt.Println("Post: ", values.post)
+	fmt.Println("Employee id: ", values.eid)
+}
+/*
+Output
+Name:  Sam
+Age:  28
+Gender:  Male
+Per day salary:  890
+Total Salary:  26700
+Post:  HR
+Employee id:  4567
+*/
+
+// Example 2
+// concept of the promoted methods
+package main
+import "fmt"
+
+// Structure
+type details struct {
+
+	// Fields of the
+	// details structure
+	name string
+	age	 int
+	gender string
+	psalary int
+}
+
+// Method 1
+func (e employee) promotmethod(tarticle int) int {
+	return e.particle * tarticle
+}
+
+// Nested structure
+type employee struct {
+	post	 string
+	particle int
+	eid	 int
+	details
+}
+
+// Method 2
+func (d details) promotmethod(tsalary int) int {
+	return d.psalary * tsalary
+}
+
+// Main method
+func main() {
+
+	// Initializing the fields of
+	// the employee structure
+	values := employee{
+		post:	 "HR",
+		eid:	 4567,
+		particle: 5,
+		details: details{
+
+			name: "Sumit",
+			age:	 28,
+			gender: "Male",
+			psalary: 890,
+		},
+	}
+
+	// Promoted fields of
+	// the employee structure
+	fmt.Println("Name: ", values.name)
+	fmt.Println("Age: ", values.age)
+	fmt.Println("Gender: ", values.gender)
+	fmt.Println("Per day salary: ", values.psalary)
+
+	// Promoted method of
+	// the employee structure
+	fmt.Println("Total Salary: ", values.promotmethod(30))
+
+	// Normal fields of
+	// the employee structure
+	fmt.Println("Post: ", values.post)
+	fmt.Println("Employee id: ", values.eid)
+	fmt.Println("Total Articles: ", values.promotmethod(30))
+}
+/*
+Output
+Name:  Sam
+Age:  28
+Gender:  Male
+Per day salary:  890
+Total Salary:  150
+Post:  HR
+Employee id:  4567
+Total Articles:  150
+*/
+````
