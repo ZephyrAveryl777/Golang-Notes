@@ -391,3 +391,109 @@ Details of Author
 {{S ECE 2013}}
 */
 ````
+---
+### Anonymous Structure 
+- Anonymous Structure : A structure which does not contian name 
+- useful for creation of  one time usable structure 
+- Syntax :
+```go 
+variable_name := struct{
+// fields
+}{// Field_values}
+````
+- Example 
+```go 
+// Go program to illustrate the
+// concept of anonymous structure
+package main
+
+import "fmt"
+
+// Main function
+func main() {
+
+	// Creating and initializing
+	// the anonymous structure
+	Element := struct {
+		name	 string
+		branch string
+		language string
+		Particles int
+	}{
+		name:	 "A",
+		branch: "ECE",
+		language: "C++",
+		Particles: 498,
+	}
+
+	// Display the anonymous structure
+	fmt.Println(Element)
+}
+/*
+Output 
+{A ECE C++ 498}
+*/
+```
+---
+### Anonymous Fields
+- fields which do not contain any name, just simply mention the type of the fields and Go will automatically use the type as the name of the field.
+- Syntax: 
+```go 
+type struct_name struct{
+    int
+    bool
+    float64
+}
+````
+**Important Points to remember**
+- In a structure, you are not allowed to create two or more fields of the same type  (try to do so, then the compiler will give an error.)
+```go 
+type student struct{
+int
+int
+}
+```
+- You are allowed to combine the anonymous fields with the named fields
+```go 
+type student struct{
+ name int
+ price int
+ string
+}
+````
+- Example of Anonymous Field concept
+```go 
+// Go program to illustrate the
+// concept of anonymous structure
+package main
+
+import "fmt"
+
+// Creating a structure
+// with anonymous fields
+type student struct {
+	int
+	string
+	float64
+}
+
+// Main function
+func main() {
+
+	// Assigning values to the anonymous
+	// fields of the student structure
+	value := student{123, "B", 8900.23}
+
+	// Display the values of the fields
+	fmt.Println("Enrollment number : ", value.int)
+	fmt.Println("Student name : ", value.string)
+	fmt.Println("Package price : ", value.float64)
+}
+/*
+Output 
+Enrollment number :  123
+Student name :  B
+Package price :  8900.23
+*/
+``` 
+---
