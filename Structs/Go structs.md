@@ -256,10 +256,10 @@ func main() {
 	}
 
 	a2 := Author{
-		name:	 "S1",
-		branch: "C1",
-		language: "P1",
-		Particles: 78,
+		name:	 "S",
+		branch: "C",
+		language: "P",
+		Particles: 48,
 	}
 
 	a3 := Author{
@@ -281,5 +281,113 @@ func main() {
 Output
 Is a1 equal to a2:  true
 Is a2 equal to a3:  false
+*/
+````
+---
+### Nested Structure
+-  A structure which is the field of another (within another) structure 
+-  Synatx of Nested Structure
+```go
+type struct_name_1 struct{
+  // Fields
+} 
+type struct_name_2 struct{
+  variable_name  struct_name_1
+
+}
+````
+- Example 
+``` go 
+// the nested structure
+package main
+
+import "fmt"
+
+// Creating structure
+type Student struct {
+	name string
+	branch string
+	year int
+}
+
+// Creating nested structure
+type Teacher struct {
+	name string
+	subject string
+	exp	 int
+	details Student
+}
+
+func main() {
+
+	// Initializing the fields
+	// of the structure
+	result := Teacher{
+		name: "A",
+		subject: "Java",
+		exp:	 5,
+		details: Student{"B", "CSE", 2},
+	}
+
+	// Display the values
+	fmt.Println("Details of the Teacher")
+	fmt.Println("Teacher's name: ", result.name)
+	fmt.Println("Subject: ", result.subject)
+	fmt.Println("Experience: ", result.exp)
+
+	fmt.Println("\nDetails of Student")
+	fmt.Println("Student's name: ", result.details.name)
+	fmt.Println("Student's branch name: ", result.details.branch)
+	fmt.Println("Year: ", result.details.year)
+}
+/*
+Output
+Details of the Teacher
+Teacher's name:  A
+Subject:  Java
+Experience:  5
+
+Details of Student
+Student's name:  B
+Student's branch name:  CSE
+Year:  2
+*/
+
+// Example 2 
+package main
+  
+import "fmt"
+  
+// Creating structure
+type Author struct {
+    name   string
+    branch string
+    year   int
+}
+  
+// Creating nested structure
+type HR struct {
+  
+    // structure as a field
+    details Author
+}
+  
+func main() {
+  
+    // Initializing the fields
+    // of the structure
+    result := HR{
+      
+        details: Author{"S", "ECE", 2013},
+    }
+  
+    // Display the values
+    fmt.Println("\nDetails of Author")
+    fmt.Println(result)
+}
+/*
+Output:
+Details of Author
+{{S ECE 2013}}
 */
 ````
