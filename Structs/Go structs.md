@@ -225,4 +225,61 @@ func main(){
  Variable a1 is equal to varaible a2
  Varaible a2 is not equal to variables a3
  */
+ 
+
+// using DeepEqual() method
+package main
+
+import (
+	"fmt"
+	"reflect"
+)
+
+// Creating a structure
+type Author struct {
+	name	 string
+	branch string
+	language string
+	Particles int
+}
+
+// Main function
+func main() {
+
+	// Creating variables
+	// of Author structure
+	a1 := Author{
+		name:	 "S",
+		branch: "C",
+		language: "P",
+		Particles: 48,
+	}
+
+	a2 := Author{
+		name:	 "S1",
+		branch: "C1",
+		language: "P1",
+		Particles: 78,
+	}
+
+	a3 := Author{
+		name:	 "D",
+		branch: "C2",
+		language: "P2",
+		Particles: 88,
+	}
+	
+	// Compairing a1 with a2
+	// Using DeepEqual() method
+	fmt.Println("Is a1 equal to a2: ", reflect.DeepEqual(a1, a2))
+
+	// Compairing a2 with a3
+	// Using DeepEqual() method
+	fmt.Println("Is a2 equal to a3: ", reflect.DeepEqual(a2, a3))
+}
+/*
+Output
+Is a1 equal to a2:  true
+Is a2 equal to a3:  false
+*/
 ````
