@@ -1,10 +1,4 @@
----
-title: MAPS
-created: '2021-04-21T10:47:41.367Z'
-modified: '2021-04-21T11:57:37.857Z'
----
-
-# MAPS
+# Maps in GO
 
 - An unordered collection of key value pair.
 
@@ -14,28 +8,26 @@ modified: '2021-04-21T11:57:37.857Z'
 
 - The type of keys and type of values must be of the same type, different types of keys and values in the same maps are not allowed. But the type of key and the type values can differ.
 
-**How to creating and initializing Maps?**
-*1*
+### creating and initializing Maps
+- #### 1
 
-- // An Empty map
-        map[Key_Type]Value_Type{}
+	- **An Empty map**
+		- `map[Key_Type]Value_Type{}`
 
-- // Map with key-value pair
-        map[Key_Type]Value_Type{key1: value1, ..., keyN: valueN}
+	-  **Map with key-value pair**
+		-  `map[Key_Type]Value_Type{key1: value1, ..., keyN: valueN}`
 
-- Example
+	- Example
+		- `var mymap map[int]string`
 
-var mymap map[int]string
+- #### 2
 
-*2*
-
-- Using make function
-Syntax:
-
-  make(map[Key_Type]Value_Type, initial_Capacity)
-  make(map[Key_Type]Value_Type)
+	- **Using make function**
+	- Syntax:
+	  	- `make(map[Key_Type]Value_Type, initial_Capacity)`
+	 	- `make(map[Key_Type]Value_Type)`
+	  
 ```go
-// Go program to illustrate how to
 // create and initialize a map
 // Using make() function
 package main
@@ -64,12 +56,11 @@ map[1.3:Rohit 1.5:Sumit]
 */
 ```
 
-**How to iterate over a map?**
-- You can iterate a map using the range for loop
+### iterate over a map
+- can iterate a map using the range for loop
 
 ```go
-// Go program to illustrate how
-// to iterate the map using for
+// iterate the map using for
 // rang loop
 
 package main
@@ -107,11 +98,10 @@ Output:
 */
 ```
 
-**How to add key-value pairs in the map?**
+### add key-value pairs in the map
 
 ```go
-// Go program to illustrate how to add
-// a key-value pair in the map using
+// adding a key-value pair in the map using
 // make() function
 package main
 
@@ -145,19 +135,19 @@ func main() {
 /*
 Output:
 
-Original map:  map[90:Dog 91:Cat 92:Cow 93:Bird 94:Rabbit]
+Original map:  
+	map[90:Dog 91:Cat 92:Cow 93:Bird 94:Rabbit]
 Map after adding new key-value pair:
- map[90:Dog 91:Cat 92:Cow 93:Bird 94:Rabbit 95:Parrot 96:Crow]
+ 	map[90:Dog 91:Cat 92:Cow 93:Bird 94:Rabbit 95:Parrot 96:Crow]
 
 Map after updating values of the map:
- map[90:Dog 91:PIG 92:Cow 93:DONKEY 94:Rabbit 95:Parrot 96:Crow]
+ 	map[90:Dog 91:PIG 92:Cow 93:DONKEY 94:Rabbit 95:Parrot 96:Crow]
  */
 ```
 
-**How to retrieve a value related to a key in the maps?**
+### retrieve a value related to a key in the maps
 
 ```go
-// Go program to illustrate how to
 // retrieve the value of the key
 
 package main
@@ -192,24 +182,14 @@ Value of key[90]:  Dog
 Value of key[93]:  Bird
 */
 ```
-**How to check the existence of the key in the map?**
+### to check the existence of the key in the map
 
-// With value
-// It will gives the value and check result
-
-
-- value, check_variable_name:= map_name[key]
-
-or
-
-// Without value using the blank identifier
-// It will only give check result
-
-
-- _, check_variable_name:= map_name[key]
+-  With value It will gives the value and check result
+	- `value, check_variable_name:= map_name[key]` 
+- Without value using the blank identifier It will only give check result
+	- `_, check_variable_name:= map_name[key]`
 
 ```go
-// Go program to illustrate how to
 // check the key is available or not
 
 package main
@@ -245,21 +225,18 @@ func main() {
 Output:
 
 Original map:  map[90:Dog 91:Cat 92:Cow 93:Bird 94:Rabbit]
-
 Key present or not: true
 Value: Dog
-
 Key present or not: true
 */
 ```
 
-**How to delete key from the map?**
+### delete key from the map
 
 - Syntax:
-
-     delete(map_name, key)
+   - `delete(map_name, key)`
 ```go
-// Go program to illustrate how to delete a key
+//  delete a key
 
 package main
 
