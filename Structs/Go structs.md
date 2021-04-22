@@ -420,7 +420,7 @@ fmt.Printf("%+v",jim) //This type of print statement is used when we have to pri
 */
 
 // Example 4 
-// Further simplification can be done on Example 3 ,by simply elimnating the declaration of the variable contact of type contactInfo
+// Further simplification can be done on Example 3 ,by simply elimnating the declaration of the field "contact" of type contactInfo
 //instead the program can also be written thus, for the same output
 
 package main
