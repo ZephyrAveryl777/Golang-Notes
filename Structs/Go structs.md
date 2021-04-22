@@ -418,6 +418,31 @@ fmt.Printf("%+v",jim) //This type of print statement is used when we have to pri
 /*Output
 {firstName:Jim lastName:Party contact:{email:jimmurray4@gmail.com zipCode:94000}}%
 */
+
+// Example 4 
+// Further simplification can be done on Example 3 ,by simply elimnating the declaration of the variable contact of type contactInfo
+//instead the program can also be written thus, for the same output
+
+package main
+import "fmt"
+
+type contactInfo struct
+{
+email string
+zipcode int
+}
+
+type person struct
+{
+firstName string
+lastName string
+contactInfo //equivalent to previous
+}
+func main()
+{
+jim := person{firstName:"Jim",lastName:"Murray",contactInfo:contactInfo{email:"jimmurray4@gmail.com",zipcode:96453,},}
+fmt.Printf("%+v",jim) //This type of print statement is used when we have to print a labelled output, where each element is preceded by its title. Ref sample output
+}
 ````
 ---
 ### Anonymous Structure 
