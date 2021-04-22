@@ -284,7 +284,7 @@ Is a2 equal to a3:  false
 */
 ````
 ---
-### Nested Structure
+### Nested Structure/Embedded structs
 -  A structure which is the field of another (within another) structure 
 -  Synatx of Nested Structure
 ```go
@@ -389,6 +389,34 @@ func main() {
 Output:
 Details of Author
 {{S ECE 2013}}
+*/
+
+//Example 3
+
+package main
+import "fmt"
+
+type contactInfo struct
+{
+email string
+zipcode int
+}
+
+type person struct
+{
+firstName string
+lastName string
+contact contactInfo
+}
+func main()
+{
+jim := person{firstName:"Jim",lastName:"Murray",contact:contactInfo{email:"jimmurray4@gmail.com",zipcode:96453,},}
+fmt.Printf("%+v",jim) //This type of print statement is used when we have to print a labelled output, where each element is preceded by its title. Ref sample output
+}
+
+
+/*Output
+{firstName:Jim lastName:Party contact:{email:jimmurray4@gmail.com zipCode:94000}}%
 */
 ````
 ---
