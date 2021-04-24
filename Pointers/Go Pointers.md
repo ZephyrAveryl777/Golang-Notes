@@ -508,5 +508,8 @@ The value of x after function call is: 748
 
 >**Note:** 
 > - can also use the short declaration operator(:=) to declare the variables and pointers in above programs.
+
+---
+
   
 
