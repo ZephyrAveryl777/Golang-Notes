@@ -175,179 +175,125 @@ Value of y in decimal is 156
     Value stored in pointer variable p =  0x414020
     */
     ```
--  can also use the *shorthand (:=)* syntax to declare and initialize the pointer variables. The compiler will internally determine the variable is a pointer variable if we are passing the address of variable using *&(address)* operator to it.
+-  can also use the *shorthand (:=)* syntax to declare and initialize the pointer variables. 
+-  The compiler will internally determine the variable is a pointer variable if we are passing the address of variable using *&(address)* operator to it.
+   - *Example:*
+    ```go
+    // the use of shorthand syntax in
+    // Pointer variables
+    package main
 
-    *Example:*
+    import "fmt"
 
-    |
+    func main() {
 
-    `// Golang program to demonstrate`
+      // using := operator to declare
+      // and initialize the variable
+      y := 458
 
-    `// the use of shorthand syntax in`
+      // taking a pointer variable using
+      // := by assigning it with the
+      // address of variable y
+      p := &y
 
-    `// Pointer variables`
+      fmt.Println("Value stored in y = ", y)
+      fmt.Println("Address of y = ", &y)
+      fmt.Println("Value stored in pointer variable p = ", p)
+    }
+    /*
+    Output:
+    Value stored in y =  458
+    Address of y =  0x414020
+    Value stored in pointer variable p =  0x414020
+    */
+    ```
 
-    `package main`
+#### Dereferencing the Pointer
+- * operator is also termed as the dereferencing operator. 
+- It is not only used to declare the pointer variable but also used to access the value stored in the variable which the pointer points to which is generally termed as **indirecting or dereferencing**. 
+- \* operator is also termed as the value at the address of. 
+  - **Example:**
+ ```go
+    // concept of dereferencing a pointer
+    package main
 
-    `import` `"fmt"`
+    import "fmt"
 
-    `func main() {`
+    func main() {
 
-    `// using := operator to declare `
+      // using var keyword
+      // we are not defining
+      // any type with variable
+      var y = 458
 
-    `// and initialize the variable`
+      // taking a pointer variable using
+      // var keyword without specifying
+      // the type
+      var p = &y
 
-    `y := 458`
+      fmt.Println("Value stored in y = ", y)
+      fmt.Println("Address of y = ", &y)
+      fmt.Println("Value stored in pointer variable p = ", p)
 
-    `// taking a pointer variable using `
+      // this is dereferencing a pointer
+      // using * operator before a pointer
+      // variable to access the value stored
+      // at the variable at which it is pointing
+      fmt.Println("Value stored in y(*p) = ", *p)
 
-    `// := by assigning it with the `
-
-    `// address of variable y`
-
-    `p := &y`
-
-    `fmt.Println(``"Value stored in y = "``, y)`
-
-    `fmt.Println(``"Address of y = "``, &y)`
-
-    `fmt.Println(``"Value stored in pointer variable p = "``, p)`
-
-    `}`
-
-     |
-
-    **Output:**
+    }
+    /*
+    Output:
 
     Value stored in y =  458
     Address of y =  0x414020
     Value stored in pointer variable p =  0x414020
+    Value stored in y(*p) =  458
+    */
+```
+-  can also change the value of the pointer or at the memory location instead of assigning a new value to the variable.
+    - **Example:**
+    ```go
+    package main
 
-#### Dereferencing the Pointer
+    import "fmt"
 
-As we know that * operator is also termed as the dereferencing operator. It is not only used to declare the pointer variable but also used to access the value stored in the variable which the pointer points to which is generally termed as **indirecting or dereferencing**. ** operator is also termed as the value at the address of*. Let's take an example to get a better understandability of this concept:
+    func main() {
+      // using var keyword
+      // we are not defining
+      // any type with variable
+      var y = 458
 
-**Example:**
+      // taking a pointer variable using
+      // var keyword without specifying
+      // the type
+      var p = &y
 
-|
+      fmt.Println("Value stored in y before changing = ", y)
+      fmt.Println("Address of y = ", &y)
+      fmt.Println("Value stored in pointer variable p = ", p)
 
-`// Golang program to illustrate the `
+      // this is dereferencing a pointer
+      // using * operator before a pointer
+      // variable to access the value stored
+      // at the variable at which it is pointing
+      fmt.Println("Value stored in y(*p) Before Changing = ", *p)
 
-`// concept of dereferencing a pointer`
+      // changing the value of y by assigning
+      // the new value to the pointer
+      *p = 500
 
-`package main`
+      fmt.Println("Value stored in y(*p) after Changing = ",y)
 
-`import` `"fmt"`
+    }
+    /*
+    Output:
+    Value stored in y before changing =  458
+    Address of y =  0x414020
+    Value stored in pointer variable p =  0x414020
+    Value stored in y(*p) Before Changing =  458
+    Value stored in y(*p) after Changing =  500
+    */
+    ```
+  
 
-`func main() {`
-
-`// using var keyword`
-
-`// we are not defining`
-
-`// any type with variable`
-
-`var` `y = 458`
-
-`// taking a pointer variable using `
-
-`// var keyword without specifying `
-
-`// the type`
-
-`var` `p = &y`
-
-`fmt.Println(``"Value stored in y = "``, y)`
-
-`fmt.Println(``"Address of y = "``, &y)`
-
-`fmt.Println(``"Value stored in pointer variable p = "``, p)`
-
-`// this is dereferencing a pointer`
-
-`// using * operator before a pointer `
-
-`// variable to access the value stored`
-
-`// at the variable at which it is pointing`
-
-`fmt.Println(``"Value stored in y(*p) = "``, *p)`
-
-`}`
-
- |
-
-**Output:**
-
-Value stored in y =  458
-Address of y =  0x414020
-Value stored in pointer variable p =  0x414020
-Value stored in y(*p) =  458
-
-You can also change the value of the pointer or at the memory location instead of assigning a new value to the variable.
-
-**Example:**
-
-|
-
-`// Golang program to illustrate the `
-
-`// above mentioned concept`
-
-`package main`
-
-`import` `"fmt"`
-
-`func main() {`
-
-`// using var keyword`
-
-`// we are not defining`
-
-`// any type with variable`
-
-`var` `y = 458`
-
-`// taking a pointer variable using `
-
-`// var keyword without specifying `
-
-`// the type`
-
-`var` `p = &y`
-
-`fmt.Println(``"Value stored in y before changing = "``, y)`
-
-`fmt.Println(``"Address of y = "``, &y)`
-
-`fmt.Println(``"Value stored in pointer variable p = "``, p)`
-
-`// this is dereferencing a pointer`
-
-`// using * operator before a pointer `
-
-`// variable to access the value stored`
-
-`// at the variable at which it is pointing`
-
-`fmt.Println(``"Value stored in y(*p) Before Changing = "``, *p)`
-
-`// changing the value of y by assigning `
-
-`// the new value to the pointer`
-
-`*p = 500`
-
-`fmt.Println(``"Value stored in y(*p) after Changing = "``,y)`
-
-`}`
-
- |
-
-**Output:**
-
-Value stored in y before changing =  458
-Address of y =  0x414020
-Value stored in pointer variable p =  0x414020
-Value stored in y(*p) Before Changing =  458
-Value stored in y(*p) after Changing =  500
