@@ -465,7 +465,6 @@ The value of x after function call is: 748
 #### Passing an address of the variable to the function call
 
 ```go
-// and passing it to the function
 package main
   
 import "fmt"
@@ -483,17 +482,13 @@ func main() {
   
     // taking a normal variable
     var x = 100
-  
-        fmt.Printf("The value of x before function call is: %d\n", x)
-  
-    // taking a pointer variable
-    // and assigning the address
-    // of x to it
-    var pa *int = &x
+      
+    fmt.Printf("The value of x before function call is: %d\n", x)
   
     // calling the function by
-    // passing pointer to function
-    ptf(pa)
+    // passing the address of
+    // the variable x
+    ptf(&x)
   
     fmt.Printf("The value of x after function call is: %d\n", x)
   
