@@ -412,5 +412,101 @@ Value stored in v after changing pt2 =  300
 ```
 ---
 
+## Pointers to a Function in Go
+
+-  You can also pass the pointers to the function like the variables. 
+-  There are two ways to do this as follows:
+    -   **Create a pointer and simply pass it to the function**
+    -   **Passing an address of the variable**
+
+#### Create a pointer and simply pass it to the Function
+
+```GO
+package main
+  
+import "fmt"
+  
+// taking a function with integer
+// type pointer as an parameter
+func ptf(a *int) {
+  
+    // dereferencing
+    *a = 748
+}
+  
+// Main function
+func main() {
+  
+    // taking a normal variable
+    var x = 100
+  
+        fmt.Printf("The value of x before function call is: %d\n", x)
+  
+    // taking a pointer variable
+    // and assigning the address
+    // of x to it
+    var pa *int = &x
+  
+    // calling the function by
+    // passing pointer to function
+    ptf(pa)
+  
+    fmt.Printf("The value of x after function call is: %d\n", x)
+  
+}
+/*
+Output:
+
+The value of x before function call is: 100
+The value of x after function call is: 748
+*/
+```
+
+#### Passing an address of the variable to the function call
+
+```go
+// and passing it to the function
+package main
+  
+import "fmt"
+  
+// taking a function with integer
+// type pointer as an parameter
+func ptf(a *int) {
+  
+    // dereferencing
+    *a = 748
+}
+  
+// Main function
+func main() {
+  
+    // taking a normal variable
+    var x = 100
+  
+        fmt.Printf("The value of x before function call is: %d\n", x)
+  
+    // taking a pointer variable
+    // and assigning the address
+    // of x to it
+    var pa *int = &x
+  
+    // calling the function by
+    // passing pointer to function
+    ptf(pa)
+  
+    fmt.Printf("The value of x after function call is: %d\n", x)
+  
+}
+/*
+Output:
+
+The value of x before function call is: 100
+The value of x after function call is: 748
+*/
+```
+
+>**Note:** 
+> - can also use the short declaration operator(:=) to declare the variables and pointers in above programs.
   
 
