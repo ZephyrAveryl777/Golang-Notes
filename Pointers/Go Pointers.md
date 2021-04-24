@@ -295,5 +295,122 @@ Value of y in decimal is 156
     Value stored in y(*p) after Changing =  500
     */
     ```
+
+---
+
+## Pointer to Pointer (Double Pointer )
+- A pointer can point to a variable of any type even to a pointer. 
+- this looks like a chain of pointers. When 
+- when define a pointer to pointer then the first pointer is used to store the address of the second pointer. 
+- This concept is sometimes termed as **Double Pointers**.
+#### Declaration of Double Pointer 
+- Declaring Pointer to Pointer is similar to declaring pointer in go 
+- The difference is we have to place an additional '*****' before the name of pointer name. 
+- This is generally done while declaring the pointer variable using the var keyword along with the type. 
+- **Example**:
+
+[![Double Pointer in Go](https://media.geeksforgeeks.org/wp-content/uploads/20190710183146/Pointer-To-Pointer.jpg)](https://media.geeksforgeeks.org/wp-content/uploads/20190710183146/Pointer-To-Pointer.jpg)
+```go
+// concept of the Pointer to Pointer
+package main
+   
+import "fmt"
+   
+// Main Function
+func main() {
+   
+        // taking a variable
+        // of integer type
+    var V int = 100
+       
+    // taking a pointer 
+    // of integer type 
+    var pt1 *int = &V
+       
+    // taking pointer to 
+    // pointer to pt1
+    // storing the address 
+    // of pt1 into pt2
+    var pt2 **int = &pt1
+   
+    fmt.Println("The Value of Variable V is = ", V)
+    fmt.Println("Address of variable V is = ", &V)
+   
+    fmt.Println("The Value of pt1 is = ", pt1)
+    fmt.Println("Address of pt1 is = ", &pt1)
+   
+    fmt.Println("The value of pt2 is = ", pt2)
+   
+    // Dereferencing the 
+    // pointer to pointer
+    fmt.Println("Value at the address of pt2 is or *pt2 = ", *pt2)
+       
+    // double pointer will give the value of variable V
+    fmt.Println("*(Value at the address of pt2 is) or **pt2 = ", **pt2)
+}
+/*
+Output:
+
+The Value of Variable V is =  100
+Address of variable V is =  0x414020
+The Value of pt1 is =  0x414020
+Address of pt1 is =  0x40c128
+The value of pt2 is =  0x40c128
+Value at the address of pt2 is or *pt2 =  0x414020
+*(Value at the address of pt2 is) or **pt2 =  100
+*/
+```
+
+- **Example 2:**
+
+[![How Pointers Works In Go](https://media.geeksforgeeks.org/wp-content/uploads/20190710182934/HowPointersWorksInGo.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190710182934/HowPointersWorksInGo.png)
+```go
+package main
+   
+import "fmt"
+   
+// Main Function
+func main() {
+   
+        // taking a variable
+        // of integer type
+    var V int = 100
+       
+    // taking a pointer 
+    // of integer type 
+    var pt1 *int = &V
+       
+    // taking pointer to 
+    // pointer to pt1
+    // storing the address 
+    // of pt1 into pt2
+    var pt2 **int = &pt1
+   
+    fmt.Println("The Value of Variable V is = ", V)
+    fmt.Println("Address of variable V is = ", &V)
+   
+    fmt.Println("The Value of pt1 is = ", pt1)
+    fmt.Println("Address of pt1 is = ", &pt1)
+   
+    fmt.Println("The value of pt2 is = ", pt2)
+   
+    // Dereferencing the 
+    // pointer to pointer
+    fmt.Println("Value at the address of pt2 is or *pt2 = ", *pt2)
+       
+    // double pointer will give the value of variable V
+    fmt.Println("*(Value at the address of pt2 is) or **pt2 = ", **pt2)
+}
+
+/*
+Output
+
+The Value of Variable v is =  100
+Value stored in v after changing pt1 =  200
+Value stored in v after changing pt2 =  300
+*/
+```
+---
+
   
 
