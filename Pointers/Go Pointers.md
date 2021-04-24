@@ -588,5 +588,100 @@ Output:
 ```
 ---
 
+## Pointer to a Struct in Golang
+
+- You can also use a pointer to a **struct**.
+- To use pointer to a struct, you can use **&** operator i.e. address operator. 
+- Golang allows access to the fields of a structure using the pointers without any dereferencing explicitly.
+- **Example 1:**
+```go
+// concept of the Pointer to struct
+package main
+  
+import "fmt"
+  
+// taking a structure
+type Employee struct {
+  
+    // taking variables
+    name  string
+    empid int
+}
+  
+// Main Function
+func main() {
+  
+    // creating the instance of the
+    // Employee struct type
+    emp := Employee{"ABC", 19078}
+  
+    // Here, it is the pointer to the struct
+    pts := &emp
+  
+    fmt.Println(pts)
+  
+    // accessing the struct fields(liem employee's name)
+    // using a pointer but here we are not using
+    // dereferencing explicitly
+    fmt.Println(pts.name)
+  
+    // same as above by explicitly using
+    // dereferencing concept
+    // means the result will be the same
+    fmt.Println((*pts).name)
+  
+}
+/*
+Output:
+
+&{ABC 19078}
+ABC
+ABC
+*/
+```
+
+**Example 2:** 
+- can also modify the values of the structure members or structure literals by using the pointer as shown below:
+```go 
+// concept of the Pointer to struct
+package main
+  
+import "fmt"
+  
+// taking a structure
+type Employee struct {
+  
+    // taking variables
+    name  string
+    empid int
+}
+  
+// Main Function
+func main() {
+  
+    // creating the instance of the
+    // Employee struct type
+    emp := Employee{"ABC", 19078}
+  
+    // Here, it is the pointer to the struct
+    pts := &emp
+  
+    // displaying the values
+    fmt.Println(pts)
+  
+    // updating the value of name
+    pts.name = "XYZ"
+  
+    fmt.Println(pts)
+  
+}
+/*
+Output:
+
+&{ABC 19078}
+&{XYZ 19078}
+*/
+
+---
   
 
