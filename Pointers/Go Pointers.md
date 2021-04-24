@@ -505,6 +505,88 @@ The value of x after function call is: 748
 > - can also use the short declaration operator(:=) to declare the variables and pointers in above programs.
 
 ---
+## Pointer to an Array as a Function Argument 
+
+- can use the pointers to an array and pass that one as an argument to the function.
+- **Example**
+```go
+// pass a pointer to an array as an argument to the function
+package main
+  
+import "fmt"
+  
+// taking a function
+func updatearray(funarr *[5]int) {
+  
+    // updating the array value
+    // at specified index
+    (*funarr)[4] = 750
+      
+    // you can also write 
+    // the above line of code
+    // funarr[4] = 750
+}
+  
+// Main Function
+func main() {
+  
+    // Taking an pointer to an array
+    arr := [5]int{78, 89, 45, 56, 14}
+  
+    // passing pointer to an array
+    // to function updatearray
+    updatearray(&arr)
+  
+    // array after updating
+    fmt.Println(arr)
+}
+/*
+Output:
+
+[78 89 45 56 750]
+*/
+```
+> **Note:**
+> - In Golang it is not recommended to use Pointer to an Array as an Argument to Function as the code become difficult to read. 
+> - it is not considered a good way to achieve this concept. To achieve this you can use slice instead of passing pointers.
+
+- **Example:**
+```go
+// concept of passing a pointer to an
+// array as an argument to the function
+// using a slice
+package main
+  
+import "fmt"
+  
+// taking a function
+func updateslice(funarr []int) {
+  
+    // updating the value
+    // at specified index
+    funarr[4] = 750
+}
+  
+// Main Function
+func main() {
+  
+    // Taking an slice
+    s := [5]int{78, 89, 45, 56, 14}
+  
+    // passing slice to the
+    // function updateslice
+    updateslice(s[:])
+  
+    // displaying the result
+    fmt.Println(s)
+}
+/*
+Output:
+
+[78 89 45 56 750]
+*/
+```
+---
 
   
 
