@@ -683,5 +683,206 @@ Output:
 */
 ```
 ---
+## Pointer Comparison 
+- Go allowes to compare two pointers with each other. 
+- Two pointers values are only equal when they point to the same value in the memory or if they are nil. 
+- can perform a comparison on pointers with the help of == and != operators.
+
+1. **== operator**: 
+	-  This operator return true if both the pointer points to the same variable. Or return false if both the pointer points to different variables.
+	- Syntax:
+		`pointer_1 == pointer_2`
+	- Example:
+```go
+      // concept of comparing two pointers
+      package main
+
+      import "fmt"
+
+      func main() {
+
+          val1 := 2345
+          val2 := 567
+
+          // Creating and initializing pointers
+          var p1 *int
+          p1 = &val1
+          p2 := &val2
+          p3 := &val1
+
+          // Comparing pointers 
+          // with each other
+          // Using == operator
+          res1 := &p1 == &p2
+          fmt.Println("Is p1 pointer is equal to p2 pointer: ", res1)
+
+          res2 := p1 == p2
+          fmt.Println("Is p1 pointer is equal to p2 pointer: ", res2)
+
+          res3 := p1 == p3
+          fmt.Println("Is p1 pointer is equal to p3 pointer: ", res3)
+
+          res4 := p2 == p3
+          fmt.Println("Is p2 pointer is equal to p3 pointer: ", res4)
+
+          res5 := &p3 == &p1
+          fmt.Println("Is p3 pointer is equal to p1 pointer: ", res5)
+      }
+      /*
+      Output:
+      
+      Is p1 pointer is equal to p2 pointer:  false
+      Is p1 pointer is equal to p2 pointer:  false
+      Is p1 pointer is equal to p3 pointer:  true
+      Is p2 pointer is equal to p3 pointer:  false
+      Is p3 pointer is equal to p1 pointer:  false
+      */
+```
+
+2. **!= operator**: 
+	- This operator return false if both the pointer points to the same variable. Or return true if both the pointer points to different variables.
+	- Syntax:
+		`pointer_1 != pointer_2`
+	- Example:
+		
+```GO
+        // concept of comparing two pointers
+        package main
+
+        import "fmt"
+
+        func main() {
+
+            val1 := 2345
+            val2 := 567
+
+            // Creating and initializing pointers
+            var p1 *int
+            p1 = &val1
+            p2 := &val2
+            p3 := &val1
+
+            // Comparing pointers
+            // with each other
+            // Using != operator
+            res1 := &p1 != &p2
+            fmt.Println("Is p1 pointer not equal to p2 pointer: ", res1)
+
+            res2 := p1 != p2
+            fmt.Println("Is p1 pointer not equal to p2 pointer: ", res2)
+
+            res3 := p1 != p3
+            fmt.Println("Is p1 pointer not equal to p3 pointer: ", res3)
+
+            res4 := p2 != p3
+            fmt.Println("Is p2 pointer not equal to p3 pointer: ", res4)
+
+            res5 := &p3 != &p1
+            fmt.Println("Is p3 pointer not equal to p1 pointer: ", res5)
+        }
+        /*
+        Output:
+
+        Is p1 pointer not equal to p2 pointer:  true
+        Is p1 pointer not equal to p2 pointer:  true
+        Is p1 pointer not equal to p3 pointer:  false
+        Is p2 pointer not equal to p3 pointer:  true
+        Is p3 pointer not equal to p1 pointer:  true
+		*/
+```
+
+---
+## Pointer Capacity 
+- In pointers, you are allowed to find the capacity of the pointer with the help of **cap()** function. 
+- This function is a built-in function returns the capacity of the pointer to array.
+- capacity defines the maximum number of elements stored in a pointer to array. 
+- **Syntax:**
+	`func cap(l Type) int`
+- **Example:**
+```go 
+// capacity of the pointer to an array
+package main
   
+import (
+    "fmt"
+)
+  
+// Main function
+func main() {
+  
+    // Creating and initializing
+    // pointer to array
+    // Using var keyword
+    var ptr1 [7]*int
+    var ptr2 [5]*string
+    var ptr3 [8]*float64
+  
+    // Finding the capacity of
+    // the pointer to array
+    // Using cap function
+    fmt.Println("Capacity of ptr1: ", cap(ptr1))
+    fmt.Println("Capacity of ptr2: ", cap(ptr2))
+    fmt.Println("Capacity of ptr3: ", cap(ptr3))
+  
+}
+/*
+Output:
+
+Capacity of ptr1 : 7
+Capacity of ptr2 : 5
+Capacity of ptr3 : 8
+*/
+```
+- **Example 2:**
+```go
+// capacity of the pointer to an array
+package main
+  
+import (
+    "fmt"
+)
+  
+// Main function
+func main() {
+  
+    // Creating an array
+    arr := [8]int{200, 300, 400,
+       500, 600, 700, 100, 200}
+      
+    var x int
+  
+    // Creating pointer
+    var p [5]*int
+  
+    // Assigning the address
+    for x = 0; x < len(p); x++ {
+        p[x] = &arr[x]
+    }
+  
+    // Displaying result
+    for x = 0; x < len(p); x++ {
+      
+        fmt.Printf("Value of p[%d] = %d\n",
+                                 x, *p[x])
+    }
+  
+    // Finding capacity
+    // using cap() function
+    fmt.Println("Capacity of arr: ", cap(arr))
+    fmt.Println("Capacity of p: ", cap(p))
+}
+
+**Output:**
+
+Value of p[0] = 200
+Value of p[1] = 300
+Value of p[2] = 400
+Value of p[3] = 500
+Value of p[4] = 600
+Capacity of arr:  8
+Capacity of p:  5
+```
+
+---
+
 
