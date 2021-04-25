@@ -882,7 +882,103 @@ Value of p[4] = 600
 Capacity of arr:  8
 Capacity of p:  5
 ```
+---
+## Pointer Length 
+- To find the length of the pointer use the help of **len()** function. 
+- This function is a built-in function that returns the total number of elements present in the pointer to an array, even if the specified pointer is nil.
+- **Syntax:**
+	`func len(l Type) int` 
+> type of l is pointer 
+- **Example:**
+```go
+// length of the pointer to an array
+package main
+  
+import (
+    "fmt"
+)
+  
+// Main function
+func main() {
+  
+    // Creating and initializing
+    // pointer to array
+    // Using var keyword
+    var ptr1 [6]*int
+    var ptr2 [3]*string
+    var ptr3 [4]*float64
+  
+    // Finding the length of 
+    // the pointer to array
+    // Using len function
+    fmt.Println("Length of ptr1: ", len(ptr1))
+    fmt.Println("Length of ptr2: ", len(ptr2))
+    fmt.Println("Length of ptr3: ", len(ptr3))
+  
+}
+/*
+Output:
+
+Length of ptr1:  6
+Length of ptr2:  3
+Length of ptr3:  4
+*/
+```
+
+- **Example 2:**
+```go
+// the length of the pointer to an array
+package main
+  
+import (
+    "fmt"
+)
+  
+// Main function
+func main() {
+  
+    // Creating an array
+    arr := [6]int{200, 300,
+        400, 500, 600, 700}
+      
+    var x int
+  
+    // Creating pointer
+    var p [4]*int
+  
+    // Assigning the address
+    for x = 0; x < len(p); x++ {
+      
+        p[x] = &arr[x]
+    }
+  
+    // Displaying result
+    for x = 0; x < len(p); x++ {
+      
+        fmt.Printf("Value of p[%d] = %d\n", x, *p[x])
+    }
+  
+    // Finding length
+    // Using len() function
+    fmt.Println("Length of arr: ", len(arr))
+    fmt.Println("Length of p: ", len(p))
+} 
+
+/*
+Output:
+
+Value of p[0] = 200
+Value of p[1] = 300
+Value of p[2] = 400
+Value of p[3] = 500
+Length of arr:  6
+Length of p:  4
+*/
+```
 
 ---
+
+
+
 
 
