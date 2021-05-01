@@ -5,12 +5,45 @@
 - memory address is always found in hexadecimal format(starting with 0x like 0xFFAAF etc.).
 
 **Need for Pointers**
-- Variables are the names given to a memory location where the actual data is stored. 
+- Variables are the names given to a memory location where the actual data is stored.
+- Go uses a pass by value model, which means every time a value is passed to a calling function a new address is generated. 
 - To access the stored data the address of that particular memory location is needed. 
 - To remember all the memory addresses(Hexadecimal Format) manually is an overhead that's why use of variables to store data 
 - as variables can be accessed just by using their name.
 - Golang also allows saving a hexadecimal number into a variable using the literal expression i.e. number starting from **0x** is a hexadecimal number.
-- **Example**
+
+**Example to illustrate the need for pointers**
+   - assume you create a function to update the name of a person in a struct
+   - you use a sample code as follows
+ ```Go
+ package main
+
+import "fmt"
+
+type person struct{
+firstName string
+lastName string
+}
+
+func main() {
+jim:=person{firstname:"jim",lastName:="Mulany",}
+jim.updateName("jimmy")
+fmt.Println(jim.firstName)
+ }
+ func(p person) updateName(newName string)
+ {
+ p.firstName=newName
+ }
+ 
+/*
+jim
+*/
+ ```
+ -As you can see from the above example, modification of values is impossible without the use of pointers
+ -This is because variable p is ceated in a new memory location as a copy of variable jim, when update function runs ,it modifies p but not the variable jim.
+ 
+
+ **Example-2**
 ```Go
 // variables storing the hexadecimal values
 package main
