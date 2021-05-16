@@ -139,3 +139,15 @@ select {
 [https://play.golang.org/p/prHpkyL8F6c](https://play.golang.org/p/prHpkyL8F6c)
 
 ---
+<h4 align="left">
+<p> 
+   <a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Constants/Go%20Constants.md"> Previous: Go Constants</a>
+   </p>
+</h4>
+
+
+<h4 align="right">
+<p>
+<a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Loops/Go%20Loops.md">Next: Go Loops </a>
+<p>
+</h4>
