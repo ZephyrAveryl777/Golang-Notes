@@ -38,3 +38,16 @@ func main(){
 [https://play.golang.org/p/iXJaHEZztc](https://play.golang.org/p/iXJaHEZztc)
 
 [https://play.golang.org/p/Y-jFwR11N3u](https://play.golang.org/p/Y-jFwR11N3u)
+
+<h4 align="left">
+<p> 
+   <a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/First%20Program/First%20Program.md"> Previous: First Program</a>
+   </p>
+</h4>
+
+
+<h4 align="right">
+<p>
+<a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Data%20Types/Go%20Datatypes.md">Next: Go DataTypes </a>
+<p>
+</h4>
