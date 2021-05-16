@@ -230,3 +230,15 @@ func factorial(num int ) int{
 ```
 
 ---
+<h4 align="left">
+<p> 
+   <a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Type%20Casting/Go%20TypeCasting.md"> Previous: Go TypeCasting</a>
+   </p>
+</h4>
+
+
+<h4 align="right">
+<p>
+<a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Arrays/Go%20Arrays.md">Next: Go Arrays </a>
+<p>
+</h4>
