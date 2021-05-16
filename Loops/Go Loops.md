@@ -431,3 +431,15 @@ Print now
 ```
 
 ---
+<h4 align="left">
+<p> 
+   <a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Decision%20Making/Go%20Decision%20Making.md"> Previous: Go Decision Making</a>
+   </p>
+</h4>
+
+
+<h4 align="right">
+<p>
+<a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Comments/Go%20Comments.md">Next: Go Comments </a>
+<p>
+</h4>
