@@ -140,3 +140,15 @@ func main(){
      width="100%" height="500px%" align="left" />
 
 ---
+<h4 align="left">
+<p> 
+   <a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Data%20Types/Go%20Datatypes.md"> Previous: Go DataTypes</a>
+   </p>
+</h4>
+
+
+<h4 align="right">
+<p>
+<a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Constants/Go%20Constants.md">Next: Go Constants </a>
+<p>
+</h4>
