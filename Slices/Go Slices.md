@@ -520,3 +520,15 @@ Ouput
 ```
 
 ---
+<h4 align="left">
+<p> 
+   <a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Arrays/Go%20Arrays.md"> Previous: Go Arrays</a>
+   </p>
+</h4>
+
+
+<h4 align="right">
+<p>
+<a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Command%20Line%20Arguments/Go%20Cmd.md">Next: Go Command Line Arguments </a>
+<p>
+</h4>
