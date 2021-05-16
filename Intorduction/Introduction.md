@@ -67,3 +67,8 @@ http://amzn.to/1RIM5HP
 http://amzn.to/2dVlW07
 
 ---
+<h4 align="right">
+<p>
+<a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Installation/Installation%20of%20Go.md">Next: Installation of Go </a>
+<p>
+</h4>
