@@ -329,3 +329,15 @@ Final result is: 38
 ```
 
 ---
+<h4 align="left">
+<p> 
+   <a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Functions/Go%20Functions.md"> Previous: Go Functions</a>
+   </p>
+</h4>
+
+
+<h4 align="right">
+<p>
+<a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Slices/Go%20Slices.md">Next: Go Slices </a>
+<p>
+</h4>
