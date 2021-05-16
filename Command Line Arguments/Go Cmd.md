@@ -57,3 +57,15 @@ Jerry
 ```
 
 ---
+<h4 align="left">
+<p> 
+   <a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Slices/Go%20Slices.md"> Previous: Go Slices</a>
+   </p>
+</h4>
+
+
+<h4 align="right">
+<p>
+<a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Strings/Go%20Strings.md">Next: Go Strings </a>
+<p>
+</h4>
