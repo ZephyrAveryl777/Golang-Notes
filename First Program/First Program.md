@@ -42,3 +42,15 @@ Step 3: - Open terminal or command prompt specify the folder where the above fil
 [https://play.golang.org/p/v3rrZLwEUC](https://play.golang.org/p/v3rrZLwEUC)
 
 ---
+<h4 align="left">
+<p> 
+   <a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Installation/Installation%20of%20Go.md"> Previous: Installation of Go</a>
+   </p>
+</h4>
+
+
+<h4 align="right">
+<p>
+<a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Variables/Go%20Variables.md">Next: Go Variables </a>
+<p>
+</h4>
