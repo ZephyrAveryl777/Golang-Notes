@@ -75,3 +75,8 @@ Process finished with exit code 0
 ```
 
 ---
+<h4 align="left">
+<p> 
+   <a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Strings/Go%20Strings.md"> Previous: Go Strings</a>
+   </p>
+</h4>
