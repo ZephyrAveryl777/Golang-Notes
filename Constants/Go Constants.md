@@ -27,3 +27,15 @@ func main(){
 	width="100%" height="500px%" align="left" />
 
 ---
+<h4 align="left">
+<p> 
+   <a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Operators/Go%20Operators.md"> Previous: Go Operators</a>
+   </p>
+</h4>
+
+
+<h4 align="right">
+<p>
+<a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Decision%20Making/Go%20Decision%20Making.md">Next: Go Decision Making </a>
+<p>
+</h4>
