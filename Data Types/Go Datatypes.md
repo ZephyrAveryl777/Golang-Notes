@@ -75,7 +75,7 @@
 
 <h4 align="left">
 <p> 
-   <a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Variables/Go%20Variablesd.md"> Previous: Go Variables</a>
+   <a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Variables/Go%20Variables.md"> Previous: Go Variables</a>
    </p>
 </h4>
 
