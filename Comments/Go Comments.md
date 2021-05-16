@@ -30,3 +30,15 @@ Hello World! */
 ```
 
 ---
+<h4 align="left">
+<p> 
+   <a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Loops/Go%20Loops.md"> Previous: Go Loops Making</a>
+   </p>
+</h4>
+
+
+<h4 align="right">
+<p>
+<a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Type%20Casting/Go%20TypeCasting.md">Next: Go TypeCasting </a>
+<p>
+</h4>
