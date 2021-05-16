@@ -328,3 +328,15 @@ false
 ```
 
 ---
+<h4 align="left">
+<p> 
+   <a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Command%20Line%20Arguments/Go%20Cmd.md"> Previous: Go Command Line Arguments</a>
+   </p>
+</h4>
+
+
+<h4 align="right">
+<p>
+<a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Regex/Go%20regex.md">Next: Go Regex </a>
+<p>
+</h4>
