@@ -72,3 +72,16 @@
 ### Practice Code
 
 [https://play.golang.org/p/lZI24QXsAHl](https://play.golang.org/p/lZI24QXsAHl)
+
+<h4 align="left">
+<p> 
+   <a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Variables/Go%20Variablesd"> Previous: Go Variables</a>
+   </p>
+</h4>
+
+
+<h4 align="right">
+<p>
+<a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Operators/Go%20Operators.md">Next: Go Operators </a>
+<p>
+</h4>
