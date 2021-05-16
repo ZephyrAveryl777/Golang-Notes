@@ -39,3 +39,15 @@ Output
 ```
 
 ---
+<h4 align="left">
+<p> 
+   <a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Comments/Go%20Comments.md"> Previous: Go Comments</a>
+   </p>
+</h4>
+
+
+<h4 align="right">
+<p>
+<a href="https://github.com/ZephyrAveryl777/Golang-Notes/blob/main/Functions/Go%20Functions.md">Next: Go Functions </a>
+<p>
+</h4>
